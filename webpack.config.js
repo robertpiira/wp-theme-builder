@@ -1,7 +1,9 @@
+
+var themeName = require('./package').theme.name
 var path = require('path')
 var webpack = require('webpack')
 var isProduction = process.env.NODE_ENV === 'production'
-var outputFolder = isProduction ? 'dist' : 'build'
+var outputFolder = isProduction ? 'dist/' + themeName : 'build'
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var extractCSS = new ExtractTextPlugin('style.css', { allChunks: false })

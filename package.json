@@ -12,6 +12,9 @@
     "type": "git",
     "url": "github.com/piira/theme-builder"
   },
+  "theme": {
+    "name": "example-theme"
+  },
   "author": "Robert Piira <robert@piira.se> (http://piira.se)",
   "license": "ISC",
   "devDependencies": {
