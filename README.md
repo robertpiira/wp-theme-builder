@@ -1,7 +1,7 @@
 # wp-theme-builder
 Minimal wp theme builder with webpack
 
-Example theme starting point with `https://github.com/Automattic/_s`
+Example theme starting point with [underscores](https://github.com/Automattic/_s)
 
 Sass / ES6 out of the box!
 

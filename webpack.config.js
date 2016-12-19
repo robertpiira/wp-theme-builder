@@ -1,5 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
+var isProduction = process.env.NODE_ENV === 'production'
+var outputFolder = isProduction ? 'dist' : 'build'
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var extractCSS = new ExtractTextPlugin('style.css', { allChunks: false })
@@ -10,7 +12,7 @@ var copyFiles = new CopyWebpackPlugin(
       to: ''
     }
   ], {
-    ignore: [    
+    ignore: [
       'src/styles',
       'src/js'
     ]
@@ -51,9 +53,12 @@ module.exports = {
     main: ['./src/js/index.js'],
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, outputFolder),
     filename: 'bundle.js'
   },
+  postcss: [
+    require('autoprefixer')
+  ],
   plugins: [
     extractCSS,
     copyFiles
