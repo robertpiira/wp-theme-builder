@@ -14,7 +14,7 @@ var copyFiles = new CopyWebpackPlugin(
   ], {
     ignore: [
       'src/styles',
-      'src/js'
+      'src/scripts'
     ]
   })
 
@@ -50,7 +50,7 @@ module.exports = {
     ]
   },
   entry: {
-    main: ['./src/js/index.js'],
+    main: ['./src/scripts/index.js'],
   },
   output: {
     path: path.join(__dirname, outputFolder),
