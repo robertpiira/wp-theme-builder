@@ -1,7 +1,7 @@
-/*
+/*!
 Theme Name: -
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: Underscores.me & robertpiira
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -11,13 +11,6 @@ Text Domain: -
 Tags:
 */
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	font-size: 1.1em;
-}
+@import 'base/reset';
+@import 'base/generic';
+@import 'base/typography';

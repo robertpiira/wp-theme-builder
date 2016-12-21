@@ -1,0 +1,24 @@
+@import '../functions/config';
+
+$bg-primary: #fff;
+$bg-secondary: #000;
+$bg-ternary: #222;
+
+$text-primary: #222;
+$text-secondary: #666;
+$text-ternary: #f03c9a;
+$text-inverted: #fff;
+
+$_color: (
+  bg-primary: $bg-primary,
+  bg-secondary: $bg-secondary,
+  bg-ternary: $bg-ternary,
+  text-primary: $text-primary,
+  text-secondary: $text-secondary,
+  text-ternary: $text-ternary,
+  text-inverted: $text-inverted
+);
+
+@function color($request) {
+  @return config($_color, $request);
+}

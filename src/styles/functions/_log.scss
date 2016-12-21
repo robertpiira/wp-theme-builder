@@ -1,0 +1,8 @@
+
+@function log($message) {
+  @if feature-exists('at-error') != true {
+    @warn $message;
+  } @else {
+    @error $message;
+  }
+}

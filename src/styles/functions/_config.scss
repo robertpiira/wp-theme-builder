@@ -1,0 +1,12 @@
+@import './map-has-keys';
+@import './log';
+
+@function config($map, $key) {
+
+  @if map-has-keys($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @return log("Can't find the property value you're looking for. Maybe you spelled the key wrong? => "  #{$key})
+  }
+  
+}

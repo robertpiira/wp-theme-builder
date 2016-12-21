@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(scss|css)$/,
         include: /src/,
         exclude: /node_modules/,
-        loader: ExtractTextPlugin.extract('style?sourceMap', `css!postcss!sass-loader`)
+        loader: ExtractTextPlugin.extract('style-loader?sourceMap', `css-loader!postcss!sass-loader`)
       },
       {
         test: /\.(png|woff|woff2|eot|ttf)$/,
