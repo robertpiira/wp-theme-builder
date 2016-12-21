@@ -10,3 +10,21 @@ html {
 body {
   color: color(text-primary);
 }
+
+a {
+  &:link {
+    color: color(text-ternary);
+  }
+  &:visited {
+    color: color(text-ternary);
+  }
+  &:hover {
+    color: darken(color(text-ternary),20);
+  }
+  &:focus{
+    color: darken(color(text-ternary),20);
+  }
+  &:active {
+    color: darken(color(text-ternary),20);
+  }
+}
