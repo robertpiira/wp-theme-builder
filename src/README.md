@@ -9,6 +9,6 @@ The only thing that is required is that the standard 'style.css' is removed (sty
 
 The 'style' and 'scripts' folders should be kept as they are. Webpack will be looking into these to folders for some Sass and ES6 goodness.
 
-##Webapack
+##Webpack
 
 Webpack will output a 'bundle.js' + 'style.css' to the project root. These files are referenced via 'functions.php'.
