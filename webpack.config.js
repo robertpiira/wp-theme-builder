@@ -11,12 +11,18 @@ var copyFiles = new CopyWebpackPlugin(
   [
     {
       from: 'src',
-      to: ''
+      to: '',
     }
   ], {
     ignore: [
-      'src/styles',
-      'src/scripts'
+      {
+        dot: true,
+        glob: 'styles/**/*'
+      },
+      {
+        dot: true,
+        glob: 'scripts/**/*'
+      }
     ]
   })
 
